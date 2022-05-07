@@ -1,0 +1,26 @@
+<%- include("partials/header") -%>
+<%- include("partials/navbar") -%>
+
+
+<h1 class="especial">Journal</h1>
+<div class="container">
+
+  <% if(posts.length == 0){ %>
+  <h4><%= homeStartTxt %></h4>
+  <% } %>
+
+
+
+
+  <% posts.forEach(function(post){ %>
+    <h2> > <%= post.title %> </h2>
+    <!-- directamente trunca el contenido de los post a 100 parecteres y agrega "..." -->
+    <p>
+    <%= post.post.substring(0,100) + "..." %>
+    <a href="posts/<%= post.title %>">Leer más</a>
+    </p>
+  <% }); %>
+
+</div>
+
+<%- include("partials/bottom") -%>

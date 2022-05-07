@@ -1,0 +1,20 @@
+<%-include("partials/header")-%>
+
+<style media="screen">
+  body{
+    background-image: url(img/background.png);
+  }
+</style>
+
+<%-include("partials/navbar")-%>
+
+<img class="emotion-face" src="img/<%=color%>.png" alt="">
+<div class="big-container">
+
+  <h3>Te sientes <%= emotion %>. </h3>
+  <p>Esto significa que tienes <span class=" <%=color%>  "><%= energy %></span>  energía y predomina una emoción <span class=" <%=color%>  "> <%= polaridad %></span> en tí <span class=" <%=color%> "><3</span> </p>
+  <p> <%=mensajito%> </p>
+  
+</div>
+
+<%-include("partials/bottom")-%>

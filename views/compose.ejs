@@ -1,0 +1,26 @@
+<%- include("partials/header") -%>
+<%- include("partials/navbar") -%>
+
+<div class="container">
+  <h1>Escribir</h1>
+  <form class="mb-3" action="" method="post">
+
+    <div class="">
+      <label class="form-label" for="postTitle">Título</label>
+      <input class="form-control" type="text" name="postTitle" value="">
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label" for="postContent">Contenido</label>
+      <textarea class="form-control" name="postContent" rows="8" cols="80"></textarea>
+    </div>
+    <br>
+    <button class="btn btn-primary" type="submit" name="button">Guardar</button>
+  </form>
+</div>
+
+
+
+
+
+<%- include("partials/bottom") -%>
